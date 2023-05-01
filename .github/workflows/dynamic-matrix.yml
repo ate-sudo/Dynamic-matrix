@@ -36,5 +36,5 @@ jobs:
         version: ${{fromJson(needs.create-matrix.outputs.matrix)}}
         version2: [10, 12, 13]
     steps:
-      - run: echo "${{ matrix.version }} / ${{ matrix.version }}"
+      - run: echo "${{ matrix.version }} / ${{ matrix.version2 }}"
       

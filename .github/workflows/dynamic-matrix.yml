@@ -1,1 +1,14 @@
+name: "Dynamic matrix"
 
+on: [ push ]
+
+jobs:
+  create-matrix:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v3
+            - name: 
+              shell: pwsh
+              run: | 
+                git tag -l

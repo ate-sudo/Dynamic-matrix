@@ -14,5 +14,4 @@ jobs:
             - name: List tags
               shell: pwsh
               run: | 
-                ls -la
-                git tag -l
+                git tag -l | Convertto-json -Compress 
